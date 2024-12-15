@@ -1,0 +1,62 @@
+﻿  glad.c
+  main.cpp
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\shader_raytrace.h(177,42): warning C4244: “参数”: 从“float”转换到“GLint”，可能丢失数据
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\shader_raytrace.h(182,51): warning C4244: “参数”: 从“float”转换到“GLint”，可能丢失数据
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\model.h(52,24): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(4,9): warning C4005: “INFINITY”: 宏重定义
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(50,14): warning C4305: “+=”: 从“double”到“T”截断
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(50,14): warning C4305:         with
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(50,14): warning C4305:         [
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(50,14): warning C4305:             T=float
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(50,14): warning C4305:         ]
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(51,14): warning C4305: “-=”: 从“double”到“T”截断
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(51,14): warning C4305:         with
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(51,14): warning C4305:         [
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(51,14): warning C4305:             T=float
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(51,14): warning C4305:         ]
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(54,14): warning C4305: “+=”: 从“double”到“T”截断
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(54,14): warning C4305:         with
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(54,14): warning C4305:         [
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(54,14): warning C4305:             T=float
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(54,14): warning C4305:         ]
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(55,14): warning C4305: “-=”: 从“double”到“T”截断
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(55,14): warning C4305:         with
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(55,14): warning C4305:         [
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(55,14): warning C4305:             T=float
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(55,14): warning C4305:         ]
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(58,14): warning C4305: “+=”: 从“double”到“T”截断
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(58,14): warning C4305:         with
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(58,14): warning C4305:         [
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(58,14): warning C4305:             T=float
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(58,14): warning C4305:         ]
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(59,14): warning C4305: “-=”: 从“double”到“T”截断
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(59,14): warning C4305:         with
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(59,14): warning C4305:         [
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(59,14): warning C4305:             T=float
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(59,14): warning C4305:         ]
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\bvh.h(112,9): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\main.cpp(239,45): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\main.cpp(286,54): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\model.h(61,1): warning C4715: “model::triangle_vertex”: 不是所有的控件路径都返回值
+glfw3.lib(init.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(init.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(window.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(window.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(context.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(context.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(input.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(input.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(win32_time.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(win32_time.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(win32_thread.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(win32_thread.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(platform.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(platform.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(monitor.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(monitor.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(vulkan.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(vulkan.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(win32_init.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(win32_init.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(null_init.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(null_init.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(win32_module.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(win32_module.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(win32_monitor.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(win32_monitor.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(win32_window.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(win32_window.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(win32_joystick.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(win32_joystick.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(wgl_context.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(wgl_context.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(egl_context.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(egl_context.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(osmesa_context.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(osmesa_context.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(null_monitor.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(null_monitor.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(null_window.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(null_window.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(null_joystick.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(null_joystick.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+  RayTracer_OpenGL.vcxproj -> D:\ComputerGraphics\EDAN35_Project\RayTracer_OpenGL\x64\Debug\RayTracer_OpenGL.exe

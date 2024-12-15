@@ -1,8 +1,0 @@
-﻿  main.cpp
-D:\ComputerGraphics\EDAN35_Project\Rendering\RayTracer\triangle.h(18,27): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-D:\ComputerGraphics\EDAN35_Project\Rendering\RayTracer\triangle.h(34,17): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\ComputerGraphics\EDAN35_Project\Rendering\RayTracer\triangle.h(47,17): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\ComputerGraphics\EDAN35_Project\Rendering\RayTracer\triangle.h(48,17): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\ComputerGraphics\EDAN35_Project\Rendering\RayTracer\model.h(49,24): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
-D:\ComputerGraphics\EDAN35_Project\Rendering\RayTracer\model.h(58,1): warning C4715: “model::triangle_vertex”: 不是所有的控件路径都返回值
-  RayTracer.vcxproj -> D:\ComputerGraphics\EDAN35_Project\Rendering\RayTracer\x64\Debug\RayTracer.exe

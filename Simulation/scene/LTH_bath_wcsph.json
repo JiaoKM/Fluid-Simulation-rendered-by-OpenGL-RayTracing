@@ -2,11 +2,11 @@
 	"Configuration": 
 	{
         "domainStart": [0.0, 0.0, 0.0],
-        "domainEnd": [8.0, 5.0, 3.0],
+        "domainEnd": [9.0, 5.0, 3.0],
 		"addDomainBox": true,
-		"particleRadius": 0.05,
+		"particleRadius": 0.025,
 		"fps": 30.0,
-		"totalTime": 8.0,
+		"totalTime": 10.0,
 		"density0": 1000, 
 		"gravitation": [0.0, -9.81, 0.0],
 		"simulationMethod": "wcsph",
@@ -17,7 +17,7 @@
 		"boundaryHandlingMethod": 0,
 		"exportFrame": true,
 		"exportPly": true,
-		"exportObj": true
+		"exportObj": false
 	},
 	"RigidBodies": [
         {
@@ -58,12 +58,25 @@
 			"color": [255, 255, 255], 
 			"isDynamic": false,
 			"entryTime": -1.0
+		},
+		{
+            "objectId": 3,
+			"geometryFile": "model/sphere.obj",
+			"translation": [8.0, 1.0, 1.5],
+			"rotationAxis": [0, 1, 0],
+			"rotationAngle": 0,
+			"scale": [0.8, 0.8, 0.8],
+			"velocity": [0.0, 0.0, 0.0],
+			"density": 2200.0,
+			"color": [255, 255, 255], 
+			"isDynamic": false,
+			"entryTime": -1.0
 		}
 	],
 
 	"FluidBlocks": [
 		{
-            "objectId": 3,
+            "objectId": 4,
 			"start": [0.5, 0.5, 0.5],
 			"end": [1.5, 3.5, 2.5],
 			"translation": [0.0, 0.0, 0.0],
