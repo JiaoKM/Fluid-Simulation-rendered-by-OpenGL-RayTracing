@@ -1,4 +1,3 @@
-/Rendering/RayTracer_OpenGL/.vs/
-/Rendering/RayTracer/.vs/
+/RayTracer_OpenGL/.vs/
 *.ipch
 *.obj
