@@ -9,6 +9,7 @@
 #include <sstream>
 #include <iostream>
 
+// padding for transfering and loading data in shader
 struct Material
 {
     float type;
@@ -29,7 +30,6 @@ struct Object
     float radius;
     Material material;
 };
-
 
 
 class Shader

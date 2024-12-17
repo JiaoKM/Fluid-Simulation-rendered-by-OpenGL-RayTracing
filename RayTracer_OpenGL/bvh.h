@@ -114,12 +114,14 @@ int build_BVH(std::vector<Object>& object_list, int start, int end, int num) {
 	bvh_nodes[id].min_point = glm::vec3(INFINITY, INFINITY, INFINITY);
 	bvh_nodes[id].max_point = glm::vec3(-INFINITY, -INFINITY, -INFINITY);
 
+	// find the aabb
 	for (int i = start; i < end; i++) {
 		AABB aabb = object_AABB(object_list[i]);
 		bvh_nodes[id].min_point = glm::min(bvh_nodes[id].min_point, aabb.min_point);
 		bvh_nodes[id].max_point = glm::max(bvh_nodes[id].max_point, aabb.max_point);
 	}
 
+	// if the number of objects in the node is small enough, return
 	if (end - start <= num) {
 		bvh_nodes[id].num_objects = end - start;
 		bvh_nodes[id].object_index = start;
@@ -130,6 +132,7 @@ int build_BVH(std::vector<Object>& object_list, int start, int end, int num) {
 	float len_y = bvh_nodes[id].max_point.y - bvh_nodes[id].min_point.y;
 	float len_z = bvh_nodes[id].max_point.z - bvh_nodes[id].min_point.z;
 
+	// sort, but it will cause wrong rendering, need to be corrected
 	/*if (len_x > len_y && len_x > len_z) {
 		std::stable_sort(object_list.begin() + start, object_list.begin() + end, compare_x);
 	}
@@ -140,6 +143,7 @@ int build_BVH(std::vector<Object>& object_list, int start, int end, int num) {
 		std::stable_sort(object_list.begin() + start, object_list.begin() + end, compare_z);
 	}*/
 
+	// incursive building
 	int mid = start + (end - start) / 2;
 	int left = build_BVH(object_list, start, mid, num);
 	int right = build_BVH(object_list, mid, end, num);

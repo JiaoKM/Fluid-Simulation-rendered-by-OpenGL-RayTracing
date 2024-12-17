@@ -181,6 +181,7 @@ int main() {
     glGetIntegerv(GL_MAX_TEXTURE_BUFFER_SIZE, &maxSize);
     std::cout << "Max Texture Buffer Size: " << maxSize << std::endl;
 
+    // load textures
     std::string skybox_path = "skybox\\ash\\";
     GLuint skybox_texture = loadCubemap(skybox_path, faces);
 
@@ -188,6 +189,7 @@ int main() {
     GLuint earth_texture = loadTexture(texture_path);
     float rotation_angle = glm::radians(360.f / 150.f * num_frame);
 
+    // create the scene
     std::vector<Object> objectList;
     
     objectList.push_back({ 1.0f, 0.0f, glm::vec3(-2, 0, -2), glm::vec3(-2, 0, 12), glm::vec3(12, 0, -2), 0.0f, {0.0f, 0.0f, glm::vec3(0.73, 0.73, 0.73), 0.0f, 0.0f, 0.0f} });
@@ -200,7 +202,6 @@ int main() {
     objectList.push_back({ 0.0f, 0.0f, glm::vec3(8, 1, 4), glm::vec3(0, 0, 0), glm::vec3(0, 0, 0), 0.8f, {4.0f, 0.0f, glm::vec3(0.73, 0.73, 0.73), 0.0f, 0.0f, 0.0f} });
     objectList.push_back({ 0.0f, 0.0f, glm::vec3(-1, 5, 1), glm::vec3(0, 0, 0), glm::vec3(0, 0, 0), 0.9f, {3.0f, 0.0f, glm::vec3(0.9, 0.95, 0.73), 0.0f, 0.0f, 0.0f} });
     
-
     glm::vec3 pos_offset = glm::vec3(0.0, 0.0, 2.5);
 
     model letter_L("mesh_object_0.obj");
@@ -251,6 +252,7 @@ int main() {
         std::cout << "The BVH tree is wrong!" << std::endl;
     }
 
+    // create texture buffer objects to store scene data and BVH data
     GLuint BVH_TBO;
     glGenBuffers(1, &BVH_TBO);
     glBindBuffer(GL_TEXTURE_BUFFER, BVH_TBO);
@@ -261,6 +263,7 @@ int main() {
     glBindTexture(GL_TEXTURE_BUFFER, BVHTexture);
     glTexBuffer(GL_TEXTURE_BUFFER, GL_RGBA32F, BVH_TBO);
     
+    // set the shader and uniform variables
     Shader raytrace_shader("vertex.glsl", "fragment.glsl");
 
     raytrace_shader.use();

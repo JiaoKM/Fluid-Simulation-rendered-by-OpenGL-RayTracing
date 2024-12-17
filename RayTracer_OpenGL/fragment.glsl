@@ -23,6 +23,7 @@ struct Material {
     
 };
 
+// information of intersection
 struct Hit_record {
     bool is_intersected;
     vec3 position;
@@ -68,6 +69,7 @@ uniform samplerCube skybox;
 uniform sampler2D earthmap;
 uniform float rotation_angle;
 
+// random in [0, 1]
 float rand(vec2 co) {
     return fract(sin(dot(co, vec2(12.9898, 78.233))) * 43758.5453);
 }
@@ -83,6 +85,7 @@ float rand_unit() {
     return f;
 }
 
+// read Object and BVH node in texture buffer
 Object getObject(int index) {
     Object obj;
 
@@ -117,6 +120,7 @@ BVH_node getBVHNode(int index) {
     return node;
 }
 
+// calculate intersection with AABB, sphere and triangle
 float AABB_intersect(Ray ray, vec3 min_point, vec3 max_point) {
     vec3 inv_dir = 1.0 / ray.direction;
     vec3 t0 = (min_point - ray.origin) * inv_dir;
@@ -213,6 +217,7 @@ bool triangle_intersect(vec3 v0, vec3 v1, vec3 v2, Material mat, Ray ray, out Hi
     return false;
 }
 
+// calculate the new direction based on the type of material
 vec3 bounce_direction(Material mat, vec3 normal, vec3 incident, Hit_record rec) {
     vec3 rand_unit_vector = vec3(rand_unit(), rand_unit(), rand_unit());
     rand_unit_vector = normalize(rand_unit_vector);
@@ -245,6 +250,7 @@ vec3 bounce_direction(Material mat, vec3 normal, vec3 incident, Hit_record rec) 
     }
 }
 
+// simple traverse
 bool traverse_objects(Ray ray, out Hit_record rec) {
     bool hit_flag = false;
     float min_hit_t = INF;
@@ -279,6 +285,7 @@ bool traverse_objects(Ray ray, out Hit_record rec) {
     return hit_flag;
 }
 
+// using BVH to traverse
 bool traverse_BVH(Ray ray, out Hit_record rec) {
     bool hit_flag = false;
     float min_hit_t = INF;
@@ -356,6 +363,7 @@ bool traverse_BVH(Ray ray, out Hit_record rec) {
     return hit_flag;
 }
 
+// calculate color that one ray gets
 vec3 ray_color(Ray ray) {
     vec3 color = vec3(1.0, 1.0, 1.0);
     vec3 dir = ray.direction;
@@ -405,14 +413,6 @@ void main() {
     output_color.z = pow(color.z / sample_num, 1.0 / 2.2);
 
     FragColor = vec4(output_color, 1.0);
-
-    /*BVH_node node = getBVHNode(6);
-    if (node.right_child == 8) {
-        FragColor = vec4(1.0, 0.0, 0.0, 0.0);
-    }
-    else {
-        FragColor = vec4(0.0, 0.0, 0.0, 0.0);
-    }*/
 }
 
 
