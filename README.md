@@ -18,6 +18,6 @@ https://github.com/erizmr/SPH_Taichi
 
 https://github.com/jason-huang03/SPH_Project
 
-https://github.com/carl-vbn/opengl-raytracing/tree/main
+https://github.com/carl-vbn/opengl-raytracing
 
-https://github.com/AKGWSB/EzRT/tree/main
+https://github.com/AKGWSB/EzRT
