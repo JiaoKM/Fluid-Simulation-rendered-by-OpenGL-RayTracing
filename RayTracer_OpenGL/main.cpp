@@ -126,7 +126,7 @@ std::vector<std::string> faces
 int main() {
 
     auto t1 = std::chrono::high_resolution_clock::now();
-    int num_frame = 150;
+    int num_frame = 50;
     std::stringstream ss1;
     ss1 << std::setw(6) << std::setfill('0') << num_frame * 83;
     std::string file_num;
