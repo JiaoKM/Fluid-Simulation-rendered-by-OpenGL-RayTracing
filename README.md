@@ -21,3 +21,9 @@ https://github.com/jason-huang03/SPH_Project
 https://github.com/carl-vbn/opengl-raytracing
 
 https://github.com/AKGWSB/EzRT
+
+[LearnOpenGL - Introduction](https://learnopengl.com/Introduction)
+
+[Ray Tracing in One Weekend](https://raytracing.github.io/books/RayTracingInOneWeekend.html)
+
+[Ray Tracing: The Next Week](https://raytracing.github.io/books/RayTracingTheNextWeek.html)
